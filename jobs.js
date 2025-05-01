@@ -5,7 +5,13 @@ async function fetchjobfunction(){
     const jobresponse= await fetch(`http://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${ApiId}&app_key=${ApiKey}`);
     const jobdata= await jobresponse.json();
     console.log(jobdata);
+  for(let i=0;i<jobdata.results.length;i++){
+        const jobdetails= document.getElementById("job-details-card");
+        jobdetails.innerHTML +=
+        `<h2>${jobdata.results[i].title}</h2>
+        <p>${jobdata.results[i].description}</p>`
 
+  };
  
 }
-fetchjobfunction();
+
