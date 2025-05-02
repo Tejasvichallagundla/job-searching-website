@@ -1,8 +1,12 @@
 
 async function fetchjobfunction(){
+    const jobrole=document.querySelector("#job-role").value;
+    const location=document.querySelector('#job-location').value;
+    
+
     const ApiKey="2e4ee7ec5d4e5d53d81662a4fdad3f71";
     const ApiId="24ab108e";
-    const jobresponse= await fetch(`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=24ab108e&app_key=2e4ee7ec5d4e5d53d81662a4fdad3f71&what=software&where=Hyderabad
+    const jobresponse= await fetch(`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=${ApiId}&app_key=${ApiKey}&what=${jobrole}&where=${location}
 
 `);
     const jobdata= await jobresponse.json();
@@ -11,6 +15,7 @@ async function fetchjobfunction(){
         const jobdetails= document.getElementById("job-details-card");
         jobdetails.innerHTML +=
         `<h2>${jobdata.results[i].title}</h2>
+        <h4>${jobdata.results[i].company.display_name}</h4>
         <p>${jobdata.results[i].description}</p>`
 
   };
