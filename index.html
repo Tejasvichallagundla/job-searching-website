@@ -8,15 +8,19 @@
     <link  href="job.css" rel="stylesheet">
 </head>
 <body>
+    <header id="main-header">
+        <h1>Job Search Pro</h1>
+        <p>Find your dream job, faster.</p>
+    </header>
 <div id="details">
-    <div>
-        <label id="job-role-text">Job role: <input id="job-role"></label>
+    <div class="job-div">
+        <label id="job-role-text">Job role : <input id="job-role"></label>
         </div>
-        <div>
-        <label id="job-loc-text">Location: <input id="job-location"></label>
+        <div class="job-div">
+        <label id="job-loc-text">Location : <input id="job-location"></label>
         
     </div>
-    <button onclick="
+    <button class="availjobs-button" onclick="
         fetchjobfunction();
         ">Available Jobs</button>
 </div>
