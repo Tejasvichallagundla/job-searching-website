@@ -13,19 +13,25 @@ async function fetchjobfunction(){
     console.log(jobdata);
   for(let i=0;i<jobdata.results.length;i++){
         const jobdetails= document.getElementById("job-details-card");
+       
         jobdetails.innerHTML +=
         `<div class="job-card">
         <div class="heading">
         <h2>${jobdata.results[i].title}</h2>
         <h4 class="loc"> Location: ${jobdata.results[i].location.display_name}</h4>
+        
         </div>
         <h4> Company: ${jobdata.results[i].company.display_name}</h4>
-        
+        ${jobdata.results[i].salary_max ? `<h4 class="salary">Max salary: ${jobdata.results[i].salary_max}</h4>` : ''}
+        ${jobdata.results[i].contract_time ? `<h4 class="contract-time">Contract Time: ${jobdata.results[i].contract_time}</h4>` : ''}
         
         <p>${jobdata.results[i].description}</p>
+        <a href="${jobdata.results[i].redirect_url}"><button class="applynow-button">Apply Now</button></a>
         </div>`
+        
 
   };
+  
  
 }
 

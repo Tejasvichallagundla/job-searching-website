@@ -6,7 +6,7 @@
     background-color: rgb(57, 57, 91);
     font-family: 'Inter', sans-serif;
     /* font-family: arial,sans-serif; */
-    margin: 10px;
+    margin-bottom: 10px;
 }
 #main-header h1{
     font-size: 40px;
@@ -58,6 +58,7 @@
     border-radius: 5px;
     background-color: white;
     color: rgb(57, 57, 91);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 
 }
 .job-card h2{
@@ -86,4 +87,12 @@
 .loc{
     padding-top:10px;
    
+}
+.applynow-button{
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(57, 57, 91);
+    color: antiquewhite;
+    border: none;
 }
