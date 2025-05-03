@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jobs in search</title>
+    <link  href="job.css" rel="stylesheet">
 </head>
 <body>
+<div id="details">
     <div>
-        <label>Job role: <input id="job-role"></label>
+        <label id="job-role-text">Job role: <input id="job-role"></label>
         </div>
         <div>
-        <label>Location: <input id="job-location"></label>
+        <label id="job-loc-text">Location: <input id="job-location"></label>
         
     </div>
     <button onclick="
         fetchjobfunction();
         ">Available Jobs</button>
-
+</div>
     <div id="job-details-card"></div>
     <script src="jobs.js"></script>
 </body>

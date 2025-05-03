@@ -1,0 +1,27 @@
+
+#details{
+   justify-content: centre;
+   width:100%;
+   align-items: center;
+}
+#job-role-text,#job-loc-text{
+    font-size: 30px;
+}
+#job-role{
+    border-radius:5px;
+    padding:5px;
+    height:30px;
+
+}
+#job-location{
+    border-radius: 5px;
+    padding:5px;
+    height:30px;
+}
+.job-card{
+    border:2px solid black;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;
+
+}
