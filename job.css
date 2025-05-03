@@ -60,8 +60,30 @@
     color: rgb(57, 57, 91);
 
 }
+.job-card h2{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    
+}
+.job-card h4{
+    font-family: 'Inter', sans-serif;
+    color:gray;
+    
+}
+.job-card p{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    
+}
 .job-div{
     margin:10px;
 
 }
-
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.loc{
+    padding-top:10px;
+   
+}

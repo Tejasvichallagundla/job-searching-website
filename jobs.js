@@ -15,9 +15,12 @@ async function fetchjobfunction(){
         const jobdetails= document.getElementById("job-details-card");
         jobdetails.innerHTML +=
         `<div class="job-card">
+        <div class="heading">
         <h2>${jobdata.results[i].title}</h2>
+        <h4 class="loc"> Location: ${jobdata.results[i].location.display_name}</h4>
+        </div>
         <h4> Company: ${jobdata.results[i].company.display_name}</h4>
-        <h4> Location: ${jobdata.results[i].location.display_name}</h4>
+        
         
         <p>${jobdata.results[i].description}</p>
         </div>`
