@@ -23,9 +23,7 @@ body{
     align-items: left;
     justify-content: center;
     color: white;
-    /* background-color: rgb(57, 57, 91); */
     font-family: 'Inter', sans-serif;
-    /* font-family: arial,sans-serif; */
     margin-bottom: 10px;
 }
 #main-header h1{
@@ -43,9 +41,16 @@ body{
    width:100%;
    justify-content: center;
    
-   /* background-color: white; */
    
    
+.details-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    
+}
 }
 #job-role-text,#job-loc-text{
     font-size: 30px;
