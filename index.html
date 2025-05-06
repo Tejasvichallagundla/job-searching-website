@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="background">
-    <div class="header"> 
+    <div class="header">  
         <header id="main-header">
             <h1>Job Search Pro</h1>
             <p>Find your dream job, faster.</p>
@@ -17,16 +17,19 @@
     </div>
     
     <div id="details">
-        <div class="job-div">
-            <label id="job-role-text">Job role : <input id="job-role"></label>
+        <div class="details-div">
+            <div class="job-div">
+                <label id="job-role-text">Job role : <input id="job-role"></label>
+            </div>
+            <div class="job-div">
+                <label id="job-loc-text">Location : <input id="job-location"></label>
+            </div>
+            <button class="availjobs-button" onclick="
+               fetchjobfunction();
+              ">Available Jobs</button>
         </div>
-        <div class="job-div">
-            <label id="job-loc-text">Location : <input id="job-location"></label>
         </div>
-        <button class="availjobs-button" onclick="
-           fetchjobfunction();
-          ">Available Jobs</button>
-    </div>
+       
 </div>
     <div id="job-details-card"></div>
     <script src="jobs.js"></script>
