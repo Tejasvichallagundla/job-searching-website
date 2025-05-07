@@ -9,6 +9,8 @@ async function fetchjobfunction(){
     const jobresponse= await fetch(`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=${ApiId}&app_key=${ApiKey}&what=${jobrole}&where=${location}
 
 `);
+const jobdetails= document.getElementById("job-details-card");
+    jobdetails.innerHTML = ""; // Clear previous job details
     const jobdata= await jobresponse.json();
     console.log(jobdata);
   for(let i=0;i<jobdata.results.length;i++){
